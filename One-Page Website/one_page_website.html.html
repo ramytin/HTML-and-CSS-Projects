@@ -5,9 +5,13 @@
     <head>
     	<meta charset="utf-8">
 		<title> Buy Your Next Car | Resort</title>
+		<meta charset="utf-8">
+		<title>Buy Your Next Car | Resort</title>
+		
+		<!-- Link to external CSS file -->
+		<link rel="stylesheet" type="text/css" href="CSS\one_page_website.css">
 	</head>
-	<body>
-	
+  
 	<!--- NAV -->
 	<div>
 	     <div>
@@ -25,14 +29,14 @@
 	    <div>
 		     <div>
                   <span>Buy Your Next Car</span>
+
 			</div>
         </div>
 	</div>
-	 <video width="300" height="120" controls>
-        <source src="\images\car.mp4" type="video/mp4">
-        <source src="\images\car.mp4" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
+	<video width="300" height="120" controls>
+		<source src="images/car.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	  </video>
  <!-- END HOME -->
  
  <!-- Cars -->
@@ -40,7 +44,61 @@
        <div id="Cars">
 	   <h1>Cars</h1>
 	   <div>
-
+<!-- Thumbnail Image Grid -->
+<div class="row">
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_1.png.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="2019 BMW X5">
+	</div>
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_2.png.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="2008 Mercedes-Benz S-Class">
+	</div>
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="2023 Audi S3">
+	</div>
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="2021 Land Rover Discovery Sport">
+	</div>
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_5.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="2015 Volkswagen Scirocco">
+	</div>
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_6.png" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="2019 Lexus NX 300h">
+	</div>
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_7.png" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="2018 Audi RS5">
+	</div>
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_8.png" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="2018 Mazda MX-5">
+	</div>
+	<div class="column">
+	  <img src="images/Thumb/thumbnail_9.png" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="2014 Range Rover Evoque">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <!-- Slides -->
+	  <div class="mySlides"><div class="numbertext">1 / 9</div><img src="images/Thumb/thumbnail_1.png.jpeg" style="width:100%" alt="2019 BMW X5"></div>
+	  <div class="mySlides"><div class="numbertext">2 / 9</div><img src="images/Thumb/thumbnail_2.png.png" style="width:100%" alt="2008 Mercedes-Benz S-Class"></div>
+	  <div class="mySlides"><div class="numbertext">3 / 9</div><img src="images/Thumb/thumbnail_3.png" style="width:100%" alt="2023 Audi S3"></div>
+	  <div class="mySlides"><div class="numbertext">4 / 9</div><img src="images/Thumb/thumbnail_4.png" style="width:100%" alt="2021 Land Rover Discovery Sport"></div>
+	  <div class="mySlides"><div class="numbertext">5 / 9</div><img src="images/Thumb/thumbnail_5.png" style="width:100%" alt="2015 Volkswagen Scirocco"></div>
+	  <div class="mySlides"><div class="numbertext">6 / 9</div><img src="images/Thumb/thumbnail_6.png" style="width:100%" alt="2019 Lexus NX 300h"></div>
+	  <div class="mySlides"><div class="numbertext">7 / 9</div><img src="images/Thumb/thumbnail_7.png" style="width:100%" alt="2018 Audi RS5"></div>
+	  <div class="mySlides"><div class="numbertext">8 / 9</div><img src="images/Thumb/thumbnail_8.png" style="width:100%" alt="2018 Mazda MX-5"></div>
+	  <div class="mySlides"><div class="numbertext">9 / 9</div><img src="images/Thumb/thumbnail_9.png" style="width:100%" alt="2014 Range Rover Evoque"></div>
+  
+	  <!-- Controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption -->
+	  <div class="caption-container"><p id="caption"></p></div>
+	</div>
+  </div>
              <!--PHOTO CONTAINER 1 -->
 			 <div>
                   <div>
@@ -161,6 +219,7 @@
    </section>
    <!-- END Cars -->
    <!-- RSVP -->
+	
    <section>
        <div id="contact us">
 	       <div>
@@ -198,5 +257,7 @@
 	   	www.buyyournextcar.com &nbsp;|&nbsp; &copy; 2022
 	</div>
 	<!-- END FOOTER -->
-	</body>
+	
+	<script src="JS\one_page_website.js"></script>
+</body>
 	</html>
